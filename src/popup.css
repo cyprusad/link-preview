@@ -1,0 +1,8 @@
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+.wrap { width: 240px; padding: 14px 16px; color: #111; }
+h1 { font-size: 15px; margin: 0 0 10px; }
+.row { display: flex; gap: 8px; align-items: center; margin: 10px 0; font-size: 13px; }
+.row.col { flex-direction: column; align-items: stretch; }
+input[type="range"] { width: 100%; }
+select { padding: 6px; border-radius: 8px; border: 1px solid #ccc; }
+.hint { font-size: 11px; line-height: 1.5; opacity: 0.7; }

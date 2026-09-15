@@ -1,0 +1,13 @@
+{
+  "name": "link-preview",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Hover link preview Chromium extension",
+  "scripts": {
+    "test": "playwright test --config=test/playwright.config.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}

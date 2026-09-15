@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Link Preview manual test</title>
+<style>body{font-family:sans-serif;max-width:640px;margin:40px auto;line-height:2} a{color:#06c}</style>
+</head>
+<body>
+<h1>Link Preview manual test</h1>
+<p>Hover each link — a glass preview should appear bottom-right of the cursor.</p>
+<ul>
+  <li><a href="https://example.com">example.com (frameable, should render)</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Glass">wikipedia (should render)</a></li>
+  <li><a href="https://github.com">github.com (blocks framing — fallback card expected)</a></li>
+  <li><a href="mailto:test@example.com">mailto (no preview expected)</a></li>
+  <li><a href="#anchor">anchor (no preview expected)</a></li>
+  <li><a href="javascript:void(0)">javascript (no preview expected)</a></li>
+</ul>
+</body>
+</html>

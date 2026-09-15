@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Link Preview</h1>
+      <label class="row">
+        <input type="checkbox" id="enabled" />
+        <span>Show previews on hover</span>
+      </label>
+      <label class="row col">
+        <span>Hover delay: <b id="delayVal">300ms</b></span>
+        <input type="range" id="delay" min="0" max="1000" step="50" value="300" />
+      </label>
+      <label class="row col">
+        <span>Preview size</span>
+        <select id="size">
+          <option value="S">Small (280px)</option>
+          <option value="M" selected>Medium (320px)</option>
+          <option value="L">Large (400px)</option>
+        </select>
+      </label>
+      <p class="hint">Preview appears bottom-right of your cursor. Esc or moving away dismisses it. Some sites block embedding and show a fallback card.</p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
