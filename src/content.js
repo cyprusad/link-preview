@@ -88,7 +88,10 @@
     shadowHost.style.cssText =
       "position:fixed;top:0;left:0;width:0;height:0;z-index:2147483647;pointer-events:none;";
     document.documentElement.appendChild(shadowHost);
-    shadow = shadowHost.attachShadow({ mode: "closed" });
+    // Open (not closed): styles stay scoped, but DevTools/tests can inspect.
+    // Page scripts could already remove the host element itself, so closed
+    // mode adds no real security here.
+    shadow = shadowHost.attachShadow({ mode: "open" });
 
     const style = document.createElement("style");
     style.textContent = `
